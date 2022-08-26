@@ -51,7 +51,7 @@ placeorderBtn.addEventListener("click", () => {
     totNumOfTickets = 0;
     
     outputOverallTotal.innerHTML=0;
-    alert(`Order Placed successfully! You have earnef total of ${totLoyalty} points for this order`)
+    alert(`Order Placed successfully! You have earned total of ${totLoyalty} points for this order`)
     thisOrderPoints = 0;
 });
 
