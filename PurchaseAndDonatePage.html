@@ -1,0 +1,218 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <title>SERENDIBIYA</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="Images/safari-pinned-tab.svg" color="#ffffff">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+        <link href="Main.css" rel="stylesheet">
+        <link rel="stylesheet" href="purchaseAndDonate.css">
+        <link rel="stylesheet" href="donate.css">
+    </head>
+
+   
+    
+    <body class="body">
+      <header>
+    <div >
+    
+
+        
+    <nav> <!-- navigation bar and its properties-->
+      <div class="logo">
+        <img src="Images/logo_transparent.png">
+    </div>
+            
+            <div class="navbar">
+                <a href="index.html"><span>Home</span></a>
+                <a href="TypeOfWildlifeAttraction.html"><span>Wildlife Attractions</span></a>
+                <a href="Beaches.html"><span>Beaches</span></a>
+                <a href="Activities.html"><span>Activities</span></a>
+                <a href="PurchaseAndDonatePage.html"><span>Purchase and Donate Page</span></a>
+                <a href="HotelContactPage.html"><span>Contact Us </span></a>
+                <div class="dropdown">  <!-- dropdown button -->
+                  <button class="dropbtn">Heritage Locations</button>
+                  <div class="dropdown-content">
+                    <a href="Sigiriya.html">Sigiriya</a>
+                    <a href="Kandy.html">Kandy</a>
+                   
+                    
+                  
+                </div>
+              </div>
+        </div>
+    </nav>
+  </div>
+  
+</header>
+
+
+<div class="Don-image1">
+  <div class="Don-text">
+    <h1>Donate for Heritage</h1>
+    <p>Donations for betterment of Sri Lankan heritage</p>
+    
+  </div>
+</div>
+
+<div class="Don-image2">
+  <div class="Don-text">
+    <h1>Donate for Wildlife</h1>
+    <p>Donations for betterment of Sri Lankan WildLife</p>
+    
+  </div>
+</div>
+
+<h2>Srilankan Local merchandisers</h2>
+
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="Images/G-Flock-7.jpg" alt="Gflock" style="width:100%">
+      <div class="container">
+        <h2>GFLOCK</h2>
+       
+        <p>Every kind of clothes at one place</p>
+        
+        <p><button class="button"><a href="https://gflock.lk/pages/about-us">purchase</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="Images/lcy-careers-background.jpg" alt="LCY" style="width:100%">
+      <div class="container">
+        <h2>LCY sotre</h2>
+        
+        <p>Comfy colthes at a budget price</p>
+       
+        <p><button class="button"><a href="https://www.lcy.lk/page/about-us-16">purchase</a> </button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="Images/odel-srilanka.webp" alt="odel" style="width:100%">
+      <div class="container">
+        <h2>ODEL</h2>
+        
+        <p>Premium quality clothes and friendly staffs </p>
+        
+        <p><button class="button"><a href="https://odel.lk/home">purchase</a> </button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="form-signup" id="singup">
+
+        
+  <form method="get" onsubmit="return singup()">
+      <h1>Donation Form</h1>
+  <div class="don_1">
+      <label for="firstname">First Name: <input type="text" class="fname" name="firstname" placeholder="Enter First Name"></label><br>
+      <label for="lastname">Last Name: <input type="text" class="lname" name="lastname" placeholder="Enter Last Name"></label><br>
+      <label for="email">Email: <input type="email" class="email" name="email" placeholder="Enter Email Address"></label><br>
+  </div>
+    
+  <h3>Select Donation values</h3>
+    <br>
+    <div class="don_1">
+      <input type="checkbox" name="dona" value="100">100LKR<br>
+      <input type="checkbox" name="dona" value="250">250LKR<br>
+      <input type="checkbox" name="dona" value="500">500LKR<br>
+      <input type="checkbox" name="dona" value="1000">1000LKR<br>
+      <input type="checkbox" name="dona" value="2500">2500LKR<br>
+      <input type="checkbox" name="dona" value="5000">5000LKR<br>
+      <input type="checkbox" name="dona" value="10000">10000LKR<br>
+    </div>
+      
+     
+   <br>
+      <input type="button" onclick="myFunction()" value="donation amount">
+  
+      <input type="text" id="order" size="50">
+    <br>
+    <div class="don_1">
+      <label for="cardHolder">CARD HOLDER</label>
+      <input type="text" class="hName" name="firstname" placeholder="Enter First Name">
+      <br>
+      <label for="cardNumber">CARD NUMBER:</label>
+      <input type="text" class="d_cardNum" maxlength="16" class="card-number-input"><br>
+  </div>
+    
+   <div class="don_1">
+      <label for="date">DATE:</label>
+    <input type="date" class="date"><br>
+    <label for="cvv">CVV</label>
+    <input type="text" class="cvv" maxlength="3"><br>
+   </div> 
+  
+   
+   <p class="emsgb"></p>
+   <div>
+      <input type="submit" name="submit" value="Submit">
+      <input type="reset" name="reset" value="Reset">
+   </div>
+    
+    
+    
+    
+  </form>
+</div>
+
+
+  
+<footer class="site-footer">
+      
+        
+  <div >
+    <h6>About</h6>
+    <p class="text-justify"> Sri Lanka tourism is characterized by its colonial architecture, and Buddhist temples, stunning beaches, and destinations like Colombo, Galle, Kandy, Yala National Park. Wildlife Sanctuaries with leopard and elephant populations are also some of the most popular places to visit in Sri Lanka.</p>
+  </div>
+
+  
+
+  <div >
+    <h6>Quick Links</h6>
+    <ul class="footer-links">
+      <li><a href="index.html"><span>Home</span></a></li>
+      <li> <a href="TypeOfWildlifeAttraction.html"><span>Wildlife Attractions</span></a></li>
+      <li><a href="Beaches.html"><span>Beaches</span></a></li>
+      <li><a href="Activities.html"><span>Activities</span></a></li>
+      <li><a href="PurchaseAndDonatePage.html"><span>Purchase and Donate Page</span></a></li>
+      <li><a href="HotelContactPage.html"><span>Contact Us </span></a></li>
+      <li><a href="Sigiriya.html">Sigiriya</a></li>
+      <li> <a href="Kandy.html">Kandy</a></li>
+    </ul>
+  </div>
+
+<hr>
+
+  <div>
+    <p class="copyright-text">Copyright &copy;  All Rights Reserved by: aadil cb010188
+ 
+    </p>
+  </div>
+
+ 
+  <!-- pixabay.com. 2022. pixabay. [online] Available at: <https://pixabay.com/images/search/srilanka/> [Accessed 22 May 2022]. -->
+
+</footer>
+
+  </body>
+  <script src="donate.js"></script>
+  </html>
+ 
+  

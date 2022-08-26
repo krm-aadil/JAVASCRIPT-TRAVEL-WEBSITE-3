@@ -1,0 +1,87 @@
+
+  
+
+   .container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    min-height: 500px;
+    max-height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+  @media only screen and (max-width: 1000px) {
+    .image{
+      
+     min-height: 300px;
+      
+    }
+  } 
+
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    background-color: #3c6953;
+  }
+  
+  .container:hover .overlay {
+    width: 100%;
+  left: 0;
+  }
+  
+  .text {
+    color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  }
+
+  /*  bacground image properties */
+  body  {
+    background-image: url('Images/kandy-lake-241719.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    
+  }
+  
+
+  .paragraph
+  {
+    font-weight: bolder;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    
+  }
+   
+  /* animation properties */
+  .zoom {
+    
+    
+    transition: transform .2s; /* Animation */
+    
+  }
+  
+  .zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  
